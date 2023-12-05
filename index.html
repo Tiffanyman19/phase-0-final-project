@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
     </head>
     <body>
 
@@ -20,18 +21,27 @@
                 <div class="Info" maxlength="50">Software Engineer</div>
                 <div class="email" maxlength="50">Email: tiffanyman19@gmail.com</div>
                 <div class="phone" maxlength="50">Cell: (917)620-7382</div>
-                <button class="button open-button">My Skills</button>
             </div>
 
-        <dialog class="modal" id="modal">
-                
-            <h2>My Skills</h2>
+            <button data-modal-target="#modal">Open Modal</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">My Skills</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+              <div class="modal-body">
                 <ol>
                     <li>css</li>
                     <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>Micrsoft 365 Admin</li>
                 </ol>
-                <button class="button close-button">Close</button>
-        </dialog>
+              </div>
+                
+            </div>
+            <div id="overlay"></div>
         <div id="overlay"></div>
     </body>
 </html>
